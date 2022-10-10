@@ -1,17 +1,21 @@
+import React from "react";
 import ReactDOM from "react-dom/client"; //we use ReactDOM to render into the DOM
 
 // WHAT: This variable returns contains the html to render
+
+let name = "Rami";
+let age = 30;
+
+
+
 let output = (
 	<span>
-		James is 12 years old
+		{name} is {age} years old
 	</span>
 );
 
-// WHERE: A DOM element that will contain the entire react generated html
-const container = document.getElementById('root');
 
-// create a root
-const root = ReactDOM.createRoot(container);
+
 
 //render app to root
 root.render(output);
